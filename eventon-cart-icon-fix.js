@@ -10,11 +10,8 @@ jQuery(function($) {
 				async: false,
 				dataType: 'JSON',
 				success:function(data) {
-					//console.log(data);
 					var cart = $('.wc-ico-cart');
 					cart.find('.counter').text(data.cart_count);      //Update counter
-					//cart.find('.woocommerce-Price-amount').remove();  //Remove old Total
-					//cart.prepend( data.cart_total );                  //Insert new Total
 					$('.shopping-cart-inner').html(data.cart_list);   //Replace the content of the cart with updated list
 				},
 				error: function(errorThrown){

@@ -92,9 +92,6 @@ if ( ! class_exists( 'EventON_Cart_Icon_Fix' ) ) {
 			// add action for ajax call.
 			add_action( 'wp_ajax_eventon_cart_icon_fix_update_mini_cart', $update_mini_cart_function );
 			add_action( 'wp_ajax_nopriv_eventon_cart_icon_fix_update_mini_cart', $update_mini_cart_function );
-
-			add_filter( 'wp_ajax_nopriv_mode_theme_update_mini_cart', $update_mini_cart_function );
-			add_filter( 'wp_ajax_mode_theme_update_mini_cart', $update_mini_cart_function );
 		}
 	}
 
